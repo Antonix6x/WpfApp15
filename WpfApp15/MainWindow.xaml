@@ -6,7 +6,39 @@
         xmlns:local="clr-namespace:WpfApp15"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
+    <Grid Background="#B0C4DE">
+        <GroupBox Header="Dane pracownika" Margin="41,114,503,138">
+            <StackPanel Margin="0,0,0,3">
+                <Label Content="Imię:" Width="224" Height="25"/>
+                <TextBox x:Name="imie" TextWrapping="Wrap" Text="" Width="120"/>
+                <Label Content="Nazwisko" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                <TextBox x:Name="nazwisko" TextWrapping="Wrap" Text="" Width="120"/>
+                <Label Content="Stanowisko" HorizontalAlignment="Left"  VerticalAlignment="Top"/>
+                <ComboBox x:Name="combobox" Width="124">
+                    <ComboBoxItem Content="Kierownik"/>
+                    <ComboBoxItem Content="Starszy programista"/>
+                    <ComboBoxItem Content="Młodszy programista"/>
+                    <ComboBoxItem Content="Tester"/>
+                </ComboBox>
+
+
+            </StackPanel>
+        </GroupBox>
+        <GroupBox Header="Generuj haslo" Margin="486,114,58,138">
+            <StackPanel>
+                <Label Content="Ile znaków?" Width="224" Height="25"/>
+                <TextBox x:Name="haslo" TextWrapping="Wrap" Text="" Width="120"/>
+                <CheckBox x:Name="mW" Content="Małe i wielkie litery" Width="222"/>
+                <CheckBox x:Name="cyfry" Content="Cyfry" Width="221"/>
+                <CheckBox x:Name="znakiSpec" Content="Znaki specjalne" Width="222" Height="62"/>
+                <Button x:Name="generujHaslo" Content="Generuj hasło" Width="170" Background="SteelBlue" Foreground="#FFFBF8F8" BorderBrush="#FFF9F5F5"/>
+
+
+
+            </StackPanel>
+        </GroupBox>
+        <Button x:Name="zatwierdz" Content="ZATWIERDŹ" HorizontalAlignment="Left" Margin="244,369,0,0" VerticalAlignment="Top" Height="35" Width="283" Background="SteelBlue" Foreground="#FFFBF7F7" BorderBrush="#FFF5F3F3"/>
+
 
     </Grid>
 </Window>
