@@ -31,7 +31,7 @@
                 <CheckBox x:Name="mW" Content="Małe i wielkie litery" Width="222"/>
                 <CheckBox x:Name="cyfry" Content="Cyfry" Width="221"/>
                 <CheckBox x:Name="znakiSpec" Content="Znaki specjalne" Width="222" Height="62"/>
-                <Button x:Name="generujHaslo" Content="Generuj hasło" Width="170" Background="SteelBlue" Foreground="#FFFBF8F8" BorderBrush="#FFF9F5F5"/>
+                <Button x:Name="generujHaslo" Content="Generuj hasło" Width="170" Background="SteelBlue" Foreground="#FFFBF8F8" BorderBrush="#FFF9F5F5" Click="generujHaslo_Click"/>
 
 
 

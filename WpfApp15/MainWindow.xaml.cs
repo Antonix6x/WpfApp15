@@ -16,9 +16,18 @@ namespace WpfApp15
     /// </summary>
     public partial class MainWindow : Window
     {
+        string maleLitery= "qwertyuiopasdfghjklzxcvbnm";
+        string znakiSpecjalne = "!@#$%^&*()_+";
+        string Wielkielitery = "QWERTYUIOPASDFGHJKLZXCVBNM";
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void generujHaslo_Click(object sender, RoutedEventArgs e)
+        {
+           Random random = new Random();
+
         }
     }
 }
